@@ -46,4 +46,4 @@ jobs:
           --region=${{ secrets.GCP_REGION }} \
           --platform=managed \
           --allow-unauthenticated \
-          --service-account=${{ secrets.SERVICE_ACCOUNT_EMAIL }}
+          --service-account=660956715067-compute@developer.gserviceaccount.com
