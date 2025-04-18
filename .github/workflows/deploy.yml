@@ -45,4 +45,5 @@ jobs:
           --image=${{ secrets.ARTIFACT_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/cloud-run-source-deploy/pooja/demo-status-api:latest \
           --region=${{ secrets.GCP_REGION }} \
           --platform=managed \
-          --allow-unauthenticated
+          --allow-unauthenticated \
+          --service-account=${{ secrets.SERVICE_ACCOUNT_EMAIL }}
