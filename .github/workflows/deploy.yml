@@ -48,3 +48,4 @@ jobs:
           --allow-unauthenticated \
           --build-service-account projects/${{ secrets.GCP_PROJECT_ID }}/serviceAccounts/${{ secrets.SERVICE_ACCOUNT_EMAIL }} \
           --service-account='${{ secrets.SERVICE_ACCOUNT_EMAIL }}'
+          
