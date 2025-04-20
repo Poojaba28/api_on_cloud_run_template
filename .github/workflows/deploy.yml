@@ -30,6 +30,16 @@ jobs:
     - name: Run pre-commit checks
       run: pre-commit run --all-files
 
+    - name: Commit and push changes (if any)
+      run: |
+        git config --global user.email "ci-bot@github.com"
+        git config --global user.name "GitHub Actions"
+        if [ -n "$(git status --porcelain)" ]; then
+          git add .
+          git commit -m "chore: pre-commit auto-fixes"
+          git push
+        fi
+
     - name: Run Pytest
       run: pytest
 
