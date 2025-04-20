@@ -41,8 +41,8 @@ Add these in your repo:
 - `SERVICE_ACCOUNT_EMAIL`: Your Service Account Email
 - `GCP_PROJECT_ID`: Your GCP project ID
 - `PROJECT_NUMBER` : Your GCP Project Number(use this to find: gcloud projects describe tenacious-camp-357012 --format="value(projectNumber)" )
-- `GCP_REGION` : Your GCP Project Region 
-- `ARTIFACT_REGION` : Your GCP Artifact Registry Region 
+- `GCP_REGION` : Your GCP Project Region
+- `ARTIFACT_REGION` : Your GCP Artifact Registry Region
 
 On every push to `main`, the pipeline:
 - Runs formatting/lint checks
